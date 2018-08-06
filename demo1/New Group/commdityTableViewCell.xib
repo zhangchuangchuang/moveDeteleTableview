@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="181" id="KGk-i7-Jjw" customClass="commdityTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="180.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arz-C8-aF1">
+                        <rect key="frame" x="10" y="10" width="365" height="160.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W8a-1Z-C1m">
+                                <rect key="frame" x="0.0" y="0.0" width="365" height="160.5"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aa2-YL-fj1">
+                                <rect key="frame" x="0.0" y="0.0" width="365" height="160.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Raw-gO-qsC">
+                                <rect key="frame" x="321" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="XYh-5E-vZw"/>
+                                    <constraint firstAttribute="height" constant="44" id="yLe-3G-sOk"/>
+                                </constraints>
+                                <state key="normal" image="zysp_sc"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aa2-YL-fj1" firstAttribute="top" secondItem="arz-C8-aF1" secondAttribute="top" id="1p1-8r-t6P"/>
+                            <constraint firstAttribute="trailing" secondItem="aa2-YL-fj1" secondAttribute="trailing" id="2gd-iE-Zar"/>
+                            <constraint firstAttribute="bottom" secondItem="W8a-1Z-C1m" secondAttribute="bottom" id="5vM-kw-fUV"/>
+                            <constraint firstAttribute="bottom" secondItem="aa2-YL-fj1" secondAttribute="bottom" id="Rtr-mH-Y5n"/>
+                            <constraint firstItem="W8a-1Z-C1m" firstAttribute="top" secondItem="arz-C8-aF1" secondAttribute="top" id="Ybn-gi-c5i"/>
+                            <constraint firstItem="W8a-1Z-C1m" firstAttribute="leading" secondItem="arz-C8-aF1" secondAttribute="leading" id="Ych-Tq-xwo"/>
+                            <constraint firstAttribute="trailing" secondItem="W8a-1Z-C1m" secondAttribute="trailing" id="dDL-Bb-qhk"/>
+                            <constraint firstItem="Raw-gO-qsC" firstAttribute="top" secondItem="arz-C8-aF1" secondAttribute="top" id="dGX-9p-FNA"/>
+                            <constraint firstAttribute="trailing" secondItem="Raw-gO-qsC" secondAttribute="trailing" id="gWt-Ip-rm5"/>
+                            <constraint firstItem="aa2-YL-fj1" firstAttribute="leading" secondItem="arz-C8-aF1" secondAttribute="leading" id="l1w-Ih-xHm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="arz-C8-aF1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ZRR-yn-cJo"/>
+                    <constraint firstAttribute="trailing" secondItem="arz-C8-aF1" secondAttribute="trailing" constant="10" id="a9X-fY-saM"/>
+                    <constraint firstAttribute="bottom" secondItem="arz-C8-aF1" secondAttribute="bottom" constant="10" id="aTq-uA-A6W"/>
+                    <constraint firstItem="arz-C8-aF1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="r2w-B8-td0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgView" destination="arz-C8-aF1" id="RZP-eh-wNu"/>
+                <outlet property="comImage" destination="W8a-1Z-C1m" id="ob9-i4-DeM"/>
+                <outlet property="comTextView" destination="aa2-YL-fj1" id="k9A-Vu-XMa"/>
+                <outlet property="deleageBtn" destination="Raw-gO-qsC" id="q49-CK-hI8"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="-190"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="zysp_sc" width="14" height="14"/>
+    </resources>
+</document>
